@@ -1,0 +1,63 @@
+{
+	"Asyn Http Request Javascript": {
+		"prefix": "asynchttp",
+		"body": [
+			"async ${1}() {",
+			"    try {",
+			"        ",
+			"    } catch (error) {",
+			"        console.log(error)",
+			"        console.log(error.response)",
+			"        this.setState({ isLoading: false})",
+			"    }",
+			"}"
+		],
+		"description": "Asyn Http Request Javascript"
+	},
+
+	"Initial State React Native": {
+		"prefix": "state",
+		"body": [
+			"this.state = {",
+			"  isLoading : false",
+			"}"
+		],
+		"description": "Initial State React Native"
+	},
+
+	"Import Default React Native Component": {
+		"prefix": "rnClassImport",
+		"body": [
+			"import React from 'react';",
+			"import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';"
+		],
+		"description": "Import Default React Native Component"
+	},
+
+	"React Native Default Class Component": {
+		"prefix": "rnClass",
+		"body": [
+			"class ${1} extends React.Component {",
+			"    constructor(props) {",
+			"        super(props)",
+			"    }",
+			"    render() {",
+			"        return (",
+			"            <View style={styles.main}>",
+			"                <Text>${1} Component</Text>",
+			"            </View>",
+			"        )",
+			"    }",
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"    main: {",
+			"        flex : 1",
+			"    }",
+			"})",
+			"",
+			"export default ${1}"
+		],
+		"description": "React Native Default Class Component"
+	}
+}
